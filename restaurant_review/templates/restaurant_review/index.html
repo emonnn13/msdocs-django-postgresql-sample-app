@@ -44,7 +44,7 @@
 {% block content %}
   <h1>Restaurants</h1>
 
-  {% if restaurants %}
+  {% comment %} {% if restaurants %}
       <table class="table">
           <thead>
               <tr>
@@ -69,5 +69,8 @@
 
   <div class="d-flex justify-content-end">
           <a href="{% url 'create_restaurant' %}" class="btn btn-success px-4 gap-3">Add new restaurant</a>
-  </div>
+  </div> {% endcomment %}
+
+  <h1> :) </h1>
+  
 {% endblock %}
